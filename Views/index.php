@@ -25,16 +25,16 @@
 					Todos los campos son obligatorios
 				</p>
 				<div class="campo-formulario">
-					<input type="text" class="input-full no-bg blanco" name="nombre" placeholder="Nombre">
+					<input type="text" class="input-full no-bg blanco" id="nombre" name="nombre" placeholder="Nombre">
 				</div>
 				<div class="campo-formulario">
-					<input type="text" class="input-full no-bg blanco" name="apellidos" placeholder="Apellidos">
+					<input type="text" class="input-full no-bg blanco" id="apellidos" name="apellidos" placeholder="Apellidos">
 				</div>
 				<div class="campo-formulario">
-					<input type="email" class="input-full no-bg blanco" name="email" placeholder="E-mail">
+					<input type="email" class="input-full no-bg blanco" id="email" name="email" placeholder="E-mail">
 				</div>
 				<div class="campo-formulario">
-					<textarea name="mensaje" class="textArea-full no-bg blanco" placeholder="Mensaje"></textarea>
+					<textarea name="mensaje" class="textArea-full no-bg blanco" id="mensaje" placeholder="Mensaje"></textarea>
 				</div>
 				<div class="campo-formulario">
 					<input type="hidden" name="action" value="send-form">

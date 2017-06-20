@@ -73,6 +73,11 @@ $(document).ready(function(){
                 data: sender.serializeArray(),
                 method: 'post',
                 success: function(r){
+                    $("#nombre").val("");
+                    $("#apellidos").val("");
+                    $("#email").val("");
+                    $("#mensaje").val("");
+
                     utiles.alerta({
                         titulo:'',
                         mensaje:'GRACIAS POR SUSCRIBIRTE <br /> A NUESTRO BOLETÍN',
