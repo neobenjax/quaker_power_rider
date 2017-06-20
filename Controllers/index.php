@@ -10,7 +10,7 @@ if(isset($_POST) && isset($_POST["action"])){
 			&& isset($_POST["email"])
 			&& isset($_POST["mensaje"])
 		){
-			$query_insert = "insert into contacto
+			$query_insert = "insert into contacto_power_ride
 								(nombre, apellidos, email, mensaje)
 							values (:nombre, :apellidos, :email, :mensaje)";
 
@@ -41,7 +41,7 @@ if(isset($_POST) && isset($_POST["action"])){
 								)
 							);
 
-			//$helpers->insertDataSanitize($query_insert, $params_insert, false);
+			$helpers->insertDataSanitize($query_insert, $params_insert, false);
 
 			$to = "";
 			$from = $_POST["email"];

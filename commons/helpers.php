@@ -27,7 +27,6 @@ class Helpers
      'password' => PASSWORD,
      'charset' => 'utf8'
      ));
-
   }
 
 }
