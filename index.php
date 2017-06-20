@@ -51,9 +51,16 @@ include_once $helpers->getController($pagina);
         #inclusión de js, css y variables javascript a php
         include 'includes/librerias_js_css.php';
 
+
         ?>
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-TMSKJX');</script>
+
     </head>
-    <body ng-controller="ctrlMain">
+    <body ng-controller="ctrlMain" class="no-video">
         <?php 
         //GTM-DATALAYERS-FACEBOOK
         include_once 'includes/analytics.php'; 

@@ -866,6 +866,10 @@ input.btn-submit-form {
     background-attachment: fixed;
 }
 
+.no-video .bloque-secundario {
+    background-position: 50% -250px;
+}
+
 .bloque-secundario.stop-background{
     
 background-attachment: scroll;
@@ -881,6 +885,8 @@ h2.subtitulo-landing {
 
 sup {
     font-weight: bold;
+    font-size: 60%;
+    top: -0.8em;
 }
 
 .video-youtube {
@@ -895,6 +901,11 @@ sup {
     -webkit-transition: 1s ease all;
     transition: 1s ease all;
     /* width: 550px; */
+    /* display: none; */
+}
+
+.no-video .video-youtube {
+    display: none;
 }
 
 .subBloque-video.show .video-youtube{
@@ -995,6 +1006,11 @@ img.logos-normas {
 
 .subBloque-carrusel {
     margin: 15% auto 5%;
+}
+
+.no-video .subBloque-carrusel {
+    margin-top: -10px;
+    margin-bottom: 0px;
 }
 
 .carrusel-motos {
