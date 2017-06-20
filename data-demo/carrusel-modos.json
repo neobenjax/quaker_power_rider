@@ -1,0 +1,46 @@
+[
+    {
+        "id_modo": "1",
+        "clave_modo":"deportiva",
+        "texto_recomendado":"Recomendado para <strong>motos recreativas y deportivas</strong>",
+        "texto_certificaciones":"Certificaciones JASO MA2 / API SN",
+        "icono": "icon_moto.png",
+        "imagen_modo": "ps_deportiva.png",
+        "caracteristicas":[
+            "Aceite <b>mineral</b>",
+            "<b>Hasta 41%</b> mayor estabilidad a la oxidación",
+            "<b>Máximo control de fricción</b> para un mejor desempeño",
+            "Apto para lubricar <b>motor, caja de cambios y embrague</b>"
+        ]
+    },
+    {
+        "id_modo": "2",
+        "clave_modo":"urbana",
+        "texto_recomendado":"Recomendado para <strong>motos de trabajo </strong> y <strong>urbanas</strong>",
+        "texto_certificaciones":"Certificaciones JJASO MA2 / API SN",
+        "icono": "icon_moto2.png",
+        "imagen_modo": "ps_urbana.png",
+        "caracteristicas":[
+            "Aceite <b>mineral</b>",
+            "Reduce el desgaste <b>hasta un 50%</b>",
+            "Excepcional control de oxidación ",
+            "Apto para lubricar el <b>motor caja de cambios y clutch</b>"
+        ]
+    },
+    {
+        "id_modo": "3",
+        "clave_modo":"scooter",
+        "texto_recomendado":"Recomendado para <strong>motos Scooter </strong> y <strong>Maxi-Scooter</strong>",
+        "texto_certificaciones":"Certificaciones JASO MB / API SN",
+        "icono": "icon_moto3.png",
+        "imagen_modo": "ps_scooter.png",
+        "caracteristicas":[
+            "<b>Semi sintético</b>",
+            "Reduce la fricción <b>hasta un 25%</b>",
+            "Evita el sobrecalentamiento",
+            "Mantiene limpio el motor por <b>más tiempo</b>",
+            "Para motocicletas con <b>transmisión automática</b> (CVT)"
+        ]
+    }
+
+]
