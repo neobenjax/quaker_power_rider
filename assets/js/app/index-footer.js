@@ -63,17 +63,29 @@ $(document).ready(function(){
         }
     });
 
-    $('#formBoletin').submit(function(){
-        if($(this).valid()){
-            utiles.alerta({
-                titulo:'',
-                mensaje:'GRACIAS POR SUSCRIBIRTE <br /> A NUESTRO BOLETÍN',
-                btnCerrar:true,
-                close:function(){location.reload();}
-            });
+    $('#formBoletin').submit(function(event){
+        event.preventDefault();
+        var sender = $(this);
 
-            return true;
+        if($(this).valid()){
+            $.ajax({
+                url: url+'includes/ajax.php',
+                data: sender.serializeArray(),
+                method: 'post',
+                success: function(r){
+                    utiles.alerta({
+                        titulo:'',
+                        mensaje:'GRACIAS POR SUSCRIBIRTE <br /> A NUESTRO BOLETÍN',
+                        btnCerrar:true,
+                        close:function(){return false;}
+                    });
+                },
+                error: function(){
+                    alert("Ha ocurrido un error");
+                }
+            });
         }
+
         return false;
     });
 

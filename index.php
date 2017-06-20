@@ -21,6 +21,9 @@ include_once $helpers->getController($pagina);
         header('X-XSS-Protection: 1; mode=block');
         header('X-Content-Type-Options: nosniff');
       ?>
+        <script type="text/javascript">
+            var url = "<?php echo $baseURL; ?>";
+        </script>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
