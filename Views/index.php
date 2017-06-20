@@ -20,7 +20,7 @@
 			<p class="instrucciones-form">
 				Si quieres recibir más información acerca de nuestros productos, déjanos tus datos.
 			</p>
-			<form action="" class="formulario-boletin" method="post" id="formBoletin">
+			<form action="<?php echo $baseURL; ?>index" class="formulario-boletin" method="post" id="formBoletin">
 				<p class="obligatorios">
 					Todos los campos son obligatorios
 				</p>
@@ -37,6 +37,7 @@
 					<textarea name="mensaje" class="textArea-full no-bg blanco" placeholder="Mensaje"></textarea>
 				</div>
 				<div class="campo-formulario">
+					<input type="hidden" name="action" value="send-form">
 					<input type="submit" class="btn-submit-form bg-verde-quaker-2" value="ENVIAR">
 				</div>
 			</form>
