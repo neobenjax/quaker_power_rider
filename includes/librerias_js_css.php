@@ -36,9 +36,10 @@
 	$librerias['nombre-de-pagina']['default'] = array();
 	$libreriasFooter['nombre-de-pagina']['default'] = array();
 
-    $libreriasFooter['index']['default'][0] = 'assets/js/librerias/slick.min.js';
-    $libreriasFooter['index']['default'][1] = 'assets/js/librerias/jquery.validate.min.js';
-    $libreriasFooter['index']['default'][2] = 'assets/js/app/index-footer.js';
+    $libreriasFooter['index']['default'][0] = 'assets/js/librerias/ScrollMagic.min.js';
+    $libreriasFooter['index']['default'][1] = 'assets/js/librerias/slick.min.js';
+    $libreriasFooter['index']['default'][2] = 'assets/js/librerias/jquery.validate.min.js';
+    $libreriasFooter['index']['default'][3] = 'assets/js/app/index-footer.js';
 
 	$contenido = (is_numeric($subpagina)) ? 'default' : $subpagina;
     $helpers->getJs($librerias,$pagina,$contenido);

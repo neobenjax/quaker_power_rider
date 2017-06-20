@@ -1,5 +1,35 @@
 $(document).ready(function(){
 
+    var controller = new ScrollMagic.Controller();
+
+    var inicial = new ScrollMagic.Scene({triggerElement: "header"})
+                        // trigger animation by adding a css class
+                        .setClassToggle(".bloque-inicial-formulario", "show")
+                        .addTo(controller);
+
+    var video = new ScrollMagic.Scene({triggerElement: ".subBloque-video"})
+                        // trigger animation by adding a css class
+                        .setClassToggle(".subBloque-video", "show")
+                        .addTo(controller);
+
+    var fondo = new ScrollMagic.Scene({triggerElement: ".subBloque-carrusel"})
+                        // trigger animation by adding a css class
+                        .setClassToggle(".bloque-secundario", "stop-background")
+                        .addTo(controller);
+
+    var carrusel = new ScrollMagic.Scene({triggerElement: ".subBloque-carrusel"})
+                        // trigger animation by adding a css class
+                        .setClassToggle(".subBloque-carrusel", "show")
+                        .addTo(controller);
+                        
+    var caracteristicas = new ScrollMagic.Scene({triggerElement: ".subBloque-caracteristicas"})
+                        // trigger animation by adding a css class
+                        .setClassToggle(".subBloque-caracteristicas", "show")
+                        .addTo(controller);
+
+
+
+
     $("#formBoletin").validate({
         rules: {
             nombre: {
@@ -30,10 +60,7 @@ $(document).ready(function(){
             mensaje:{
                 required: "Es necesario que escriba un mensaje"
             }
-        }/*,
-        errorPlacement: function(error, element) {
-            error.appendTo(element.parent());
-        }*/
+        }
     });
 
     $('#formBoletin').submit(function(){
