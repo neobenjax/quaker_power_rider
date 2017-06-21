@@ -77,6 +77,7 @@ $(document).ready(function(){
                     $("#apellidos").val("");
                     $("#email").val("");
                     $("#mensaje").val("");
+                    $("#formBoletin")[0].reset();
 
                     utiles.alerta({
                         titulo:'',
