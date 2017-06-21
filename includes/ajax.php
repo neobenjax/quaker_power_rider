@@ -48,13 +48,23 @@ if(isset($_POST) && isset($_POST["action"])){
 
 			$helpers->insertDataSanitize($query_insert, $params_insert, false);
 
-			$to = "";
-			$from = $_POST["email"];
-			$subject = "Quaker Power Ride - Contacto";
-			$message = "";
+			$nombre = $_POST["nombre"];
+			$apellidos = $_POST["apellidos"];
+			$email = $_POST["email"];
+			$mensaje = $_POST["mensaje"];
 
-			//$helpers->sentMail($subject, $message, $to);
-			echo "ENTRA";
+			$to = array("cprado@quakerstate.com.mx","alejandro.segura@codice.com");
+			$from = $_POST["email"];
+			$subject = "Quaker Power Rider - Contacto";
+			$message = "<p>Formulario</p><br>
+						Nombre: $nombre<br>
+						Apellidos: $apellidos<br>
+						Email: $email<br>
+						Mensaje: $mensaje<br>
+					";
+
+			$helpers->sentEmail($subject, $message, $to);
+			echo "OK";
 		}
 	}
 

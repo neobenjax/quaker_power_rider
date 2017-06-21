@@ -415,11 +415,11 @@ public function thumbnail($file, $name, $folder_s, $folder_d, $nw, $nh)
         $mailer->SMTPAuth = true;
         $mailer->IsHTML(true);
         $mailer->CharSet = 'UTF-8';
-        $mailer->Host = "mail.codice.com";
-        $mailer->From = "";
-        $mailer->FromName = "";
-        $mailer->Username = "";
-        $mailer->Password = "";
+        $mailer->Host = "mail.emociondeportiva.com";
+        $mailer->From = "contacto@quakerstate.com.mx";
+        $mailer->FromName = "Quaker Power Rider";
+        $mailer->Username = "registro@emociondeportiva.com";
+        $mailer->Password = "&ru0kR3e@Ee7";
 
         $mailer->Body = $message;
         $mailer->Subject = $subject;
