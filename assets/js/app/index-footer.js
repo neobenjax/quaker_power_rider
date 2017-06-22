@@ -81,7 +81,7 @@ $(document).ready(function(){
 
                     utiles.alerta({
                         titulo:'',
-                        mensaje:'GRACIAS POR SUSCRIBIRTE <br /> A NUESTRO BOLETÍN',
+                        mensaje:'Gracias por dejarnos ser Tu Copiloto. <br /> Pronto recibirás nuestro boletín.',
                         btnCerrar:true,
                         close:function(){return false;}
                     });

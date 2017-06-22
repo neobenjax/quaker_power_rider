@@ -2,6 +2,7 @@
     {
         "id_modo": "1",
         "clave_modo":"deportiva",
+        "titulo_modo":"<strong>Power Rider<sup>MR</sup> 4T SAE 20W-60</strong>",
         "texto_recomendado":"Recomendado para <strong>motos recreativas y deportivas</strong>",
         "texto_certificaciones":"Certificaciones JASO MA2 / API SN",
         "icono": "icon_moto.png",
@@ -10,12 +11,14 @@
             "Aceite <b>mineral</b>",
             "<b>Hasta 41%</b> mayor estabilidad a la oxidación",
             "<b>Máximo control de fricción</b> para un mejor desempeño",
-            "Apto para lubricar <b>motor, caja de cambios y embrague</b>"
+            "Apto para lubricar <b>motor, caja de cambios y embrague</b>",
+            "Control en el clutch, especialmente cuando lleva pasajeros,<br> haciendo más suaves y completos los cambios."
         ]
     },
     {
         "id_modo": "2",
         "clave_modo":"urbana",
+        "titulo_modo":"<strong>Power Rider<sup>MR</sup> 4T SAE 10W-30</strong>",
         "texto_recomendado":"Recomendado para <strong>motos de trabajo </strong> y <strong>urbanas</strong>",
         "texto_certificaciones":"Certificaciones JJASO MA2 / API SN",
         "icono": "icon_moto2.png",
@@ -24,12 +27,14 @@
             "Aceite <b>mineral</b>",
             "Reduce el desgaste <b>hasta un 50%</b>",
             "Excepcional control de oxidación ",
-            "Apto para lubricar el <b>motor caja de cambios y clutch</b>"
+            "Apto para lubricar el <b>motor caja de cambios y clutch</b>",
+            "Control en el clutch, especialmente cuando lleva carga,<br> haciendo más suaves y completos los cambios."
         ]
     },
     {
         "id_modo": "3",
         "clave_modo":"scooter",
+        "titulo_modo":"<strong>Power Rider<sup>MR</sup> 4T SAE 10W-40</strong>",
         "texto_recomendado":"Recomendado para <strong>motos Scooter </strong> y <strong>Maxi-Scooter</strong>",
         "texto_certificaciones":"Certificaciones JASO MB / API SN",
         "icono": "icon_moto3.png",
@@ -37,7 +42,7 @@
         "caracteristicas":[
             "<b>Semi sintético</b>",
             "Reduce la fricción <b>hasta un 25%</b>",
-            "Evita el sobrecalentamiento",
+            "Evita el sobrecalentamiento brindando mayor confort al usuario.",
             "Mantiene limpio el motor por <b>más tiempo</b>",
             "Para motocicletas con <b>transmisión automática</b> (CVT)"
         ]

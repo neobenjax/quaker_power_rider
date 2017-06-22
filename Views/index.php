@@ -69,7 +69,9 @@
 	        ?>
 			
 				<div class="moto-recomendada ps-<?php echo $modo['clave_modo'];?>">
-					
+					<h2 class="subtitulo-landing">
+						<?php echo $modo['titulo_modo'];?>
+					</h2>
 					<div class="interior-ficha">
 						
 						<div class="caracteristicas">

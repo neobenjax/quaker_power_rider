@@ -904,7 +904,7 @@ sup {
     /* display: none; */
 }
 
-.no-video .video-youtube {
+.no-video .subBloque-video {
     display: none;
 }
 
@@ -1114,7 +1114,10 @@ ul.caracteristicas-lista > li {
 ul.caracteristicas-lista > li > span {
     display: inline-block;
     margin-left: 10px;
+    width: calc(100% - 40px);
+    vertical-align: middle;
 }
+
 
 button.slick-prev,button.slick-next {
     position: absolute;
@@ -1197,6 +1200,7 @@ button.slick-next{
     background-position: center;
     top: 0;
     right: 0;
+    background-size: 10px;
 }
 /*ALERTA SITIO*/
 
@@ -1371,7 +1375,7 @@ button.slick-next{
     p.certificaciones{font-size: 14px;}
     ul.caracteristicas-lista{font-size: 14px;padding-left:0;}
 
-    ul.caracteristicas-lista > li > span{display:inline;line-height: 1.2em;display: inline-block;width: calc(100% - 40px);}
+    
     ul.listado {
         padding-left: 0;
     }

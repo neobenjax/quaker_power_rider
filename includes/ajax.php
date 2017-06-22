@@ -53,7 +53,7 @@ if(isset($_POST) && isset($_POST["action"])){
 			$email = $_POST["email"];
 			$mensaje = $_POST["mensaje"];
 
-			$to = array("cprado@quakerstate.com.mx","alejandro.segura@codice.com");
+			$to = array("tucopiloto@quakerstate.com.mx","alejandro.segura@codice.com");
 			$from = $_POST["email"];
 			$subject = "Quaker Power Rider - Contacto";
 			$message = "<p>Formulario</p><br>
