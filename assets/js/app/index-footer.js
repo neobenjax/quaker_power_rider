@@ -78,6 +78,7 @@ $(document).ready(function(){
                     $("#email").val("");
                     $("#mensaje").val("");
                     $("#formBoletin")[0].reset();
+                    dataLayer.push({'event': 'powerider-envio-exitoso'});
 
                     utiles.alerta({
                         titulo:'',
@@ -87,9 +88,12 @@ $(document).ready(function(){
                     });
                 },
                 error: function(){
+                    dataLayer.push({'event': 'powerider-envio-error'});
                     alert("Ha ocurrido un error");
                 }
             });
+        }else{
+            dataLayer.push({'event': 'powerider-envio-error'});
         }
 
         return false;
