@@ -2,11 +2,12 @@
     {
         "id_modo": "1",
         "clave_modo":"deportiva",
-        "titulo_modo":"<strong>Power Rider<sup>MR</sup> 4T SAE 20W-60</strong>",
+        "titulo_modo":"<strong>Power Rider<sup>MR</sup> 4T SAE 20W-50</strong>",
         "texto_recomendado":"Recomendado para <strong>motos recreativas y deportivas</strong>",
         "texto_certificaciones":"Certificaciones JASO MA2 / API SN",
         "icono": "icon_moto.png",
         "imagen_modo": "ps_deportiva.png",
+        "data_info":1,
         "caracteristicas":[
             "Aceite <b>mineral</b>",
             "<b>Hasta 41%</b> mayor estabilidad a la oxidación",
@@ -20,9 +21,10 @@
         "clave_modo":"urbana",
         "titulo_modo":"<strong>Power Rider<sup>MR</sup> 4T SAE 10W-30</strong>",
         "texto_recomendado":"Recomendado para <strong>motos de trabajo </strong> y <strong>urbanas</strong>",
-        "texto_certificaciones":"Certificaciones JJASO MA2 / API SN",
+        "texto_certificaciones":"Certificaciones JASO MA2 / API SN",
         "icono": "icon_moto2.png",
         "imagen_modo": "ps_urbana.png",
+        "data_info":1,
         "caracteristicas":[
             "Aceite <b>mineral</b>",
             "Reduce el desgaste <b>hasta un 50%</b>",
@@ -39,6 +41,7 @@
         "texto_certificaciones":"Certificaciones JASO MB / API SN",
         "icono": "icon_moto3.png",
         "imagen_modo": "ps_scooter.png",
+        "data_info":2,
         "caracteristicas":[
             "<b>Semi sintético</b>",
             "Reduce la fricción <b>hasta un 25%</b>",

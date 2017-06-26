@@ -1,31 +1,41 @@
 $(document).ready(function(){
 
-    var controller = new ScrollMagic.Controller();
+    var controller,
+        inicial,
+        video,
+        fondo,
+        carrusel,
+        carruselSelector;
 
-    var inicial = new ScrollMagic.Scene({triggerElement: "header"})
+    carruselSelector = $('#carrusel');
+
+
+    controller = new ScrollMagic.Controller();
+
+    inicial = new ScrollMagic.Scene({triggerElement: "header"})
                         // trigger animation by adding a css class
                         .setClassToggle(".bloque-inicial-formulario", "show")
                         .addTo(controller);
 
-    var video = new ScrollMagic.Scene({triggerElement: ".subBloque-video"})
+    video = new ScrollMagic.Scene({triggerElement: ".subBloque-video"})
                         // trigger animation by adding a css class
                         .setClassToggle(".subBloque-video", "show")
                         .addTo(controller);
 
-    var fondo = new ScrollMagic.Scene({triggerElement: ".subBloque-carrusel"})
+    fondo = new ScrollMagic.Scene({triggerElement: ".subBloque-carrusel"})
                         // trigger animation by adding a css class
                         .setClassToggle(".bloque-secundario", "stop-background")
                         .addTo(controller);
 
-    var carrusel = new ScrollMagic.Scene({triggerElement: ".subBloque-carrusel"})
+    carrusel = new ScrollMagic.Scene({triggerElement: ".subBloque-carrusel"})
                         // trigger animation by adding a css class
                         .setClassToggle(".subBloque-carrusel", "show")
                         .addTo(controller);
                         
-    var caracteristicas = new ScrollMagic.Scene({triggerElement: ".subBloque-caracteristicas"})
+    /*var caracteristicas = new ScrollMagic.Scene({triggerElement: ".subBloque-caracteristicas"})
                         // trigger animation by adding a css class
                         .setClassToggle(".subBloque-caracteristicas", "show")
-                        .addTo(controller);
+                        .addTo(controller);*/
 
 
 
@@ -99,11 +109,17 @@ $(document).ready(function(){
         return false;
     });
 
-    $('#carrusel').on('init', function(slick){
-        $('#carrusel').addClass('loaded');
+    
+    carruselSelector.on('init', function(slick){
+        carruselSelector.addClass('loaded');
+        cambiarCaracteristicas();
     });
 
-    $('#carrusel').slick({
+    carruselSelector.on('afterChange', function(event, slick, currentSlide){
+      cambiarCaracteristicas();
+    });
+
+    carruselSelector.slick({
                   dots: false,
                   arrows:true,
                   infinite: true,
@@ -113,3 +129,15 @@ $(document).ready(function(){
                   pauseOnHover:false
                 });
 });
+
+function cambiarCaracteristicas(){
+    var info_id = $('.moto-recomendada.slick-active').data('info');
+    $( "#interiorCaracteristicas" ).load( confSitio.BASE_URL+"data-demo/info_caracteristicas.html #info_"+info_id, 
+      function( response, status, xhr ) {
+        console.log(response);
+        if ( status == "error" ) {
+            var msg = "Sorry but there was an error: ";
+            $( "#error" ).html( msg + xhr.status + " " + xhr.statusText );
+        }
+    });
+}

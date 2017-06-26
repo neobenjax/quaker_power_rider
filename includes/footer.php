@@ -1,4 +1,4 @@
-<footer class="bg-gris">
+<footer class="bg-verde-quaker">
 	<div class="contenido-centrado">
 		
 		<div class="legales">

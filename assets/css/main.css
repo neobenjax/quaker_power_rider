@@ -920,6 +920,7 @@ sup {
     justify-content: space-between;
     max-width: 1463px;
     padding-top: 80px;
+    align-items: center;
 }
 
 .subBloque-caracteristicas .foto-motor {
@@ -947,7 +948,7 @@ sup {
     max-width: 100%;
 }
 
-
+/*
 .subBloque-caracteristicas .foto-motor,
 .subBloque-caracteristicas .caracteristicas-power {
     -webkit-transition: 1s ease all;
@@ -961,6 +962,7 @@ sup {
 
 }
 
+
 .subBloque-caracteristicas.show .foto-motor,
 .subBloque-caracteristicas.show .caracteristicas-power{
     -webkit-transform: rotateY(0deg);
@@ -968,13 +970,15 @@ sup {
     -o-transform: rotateY(0deg);
     transform:rotateY(0deg);
 }
-
+*/
 
 h3.caracteristicas-power-titulo {
     font-size: 36px;
     font-weight: bold;
     text-align: left;
     margin-bottom: 50px;
+    -webkit-transition: 1s ease all;
+    transition: 1s ease all;
 }
 
 ul.listado {
@@ -992,12 +996,19 @@ ul.listado > li {
 ul.listado > li > span {
     display: inline-block;
     margin-left: 10px;
+    width: calc(100% - 70px);
 }
 
 p.normas {
     text-align: left;
     line-height: 1.3em;
     margin-bottom: 60px;
+}
+
+p.descripcion-caracteristica {
+    text-align: left;
+    line-height: 1.3em;
+    margin-bottom: 30px;
 }
 
 img.logos-normas {
@@ -1114,7 +1125,7 @@ ul.caracteristicas-lista > li {
 ul.caracteristicas-lista > li > span {
     display: inline-block;
     margin-left: 10px;
-    width: calc(100% - 40px);
+    width: calc(100% - 80px);
     vertical-align: middle;
 }
 
@@ -1215,6 +1226,7 @@ button.slick-next{
     h3.caracteristicas-power-titulo {font-size: 30px;margin-bottom: 30px;}
     .subBloque-caracteristicas .caracteristicas-power > .interior{font-size:24px;}
     p.normas {margin-bottom: 40px;}
+    p.descripcion-caracteristica{margin-bottom:20px;}
 
 }
 @media only screen and (max-width : 1400px) {
@@ -1379,7 +1391,7 @@ button.slick-next{
     ul.listado {
         padding-left: 0;
     }
-    ul.listado > li > span{display:inline;line-height: 1.2em;display: inline-block;width: calc(100% - 40px);}
+    ul.listado > li > span{line-height: 1.2em;}
 
     .subBloque-caracteristicas{
         padding-bottom: 10px;

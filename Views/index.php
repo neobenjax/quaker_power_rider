@@ -68,7 +68,7 @@
 	        foreach ($modos as $modo) {
 	        ?>
 			
-				<div class="moto-recomendada ps-<?php echo $modo['clave_modo'];?>">
+				<div class="moto-recomendada ps-<?php echo $modo['clave_modo'];?>" data-info="<?php echo $modo['data_info'];?>">
 					<h2 class="subtitulo-landing">
 						<?php echo $modo['titulo_modo'];?>
 					</h2>
@@ -111,29 +111,7 @@
 		</div>
 		<div class="caracteristicas-power">
 
-			<div class="interior">
-				
-				<h3 class="caracteristicas-power-titulo">
-					Características del aceite Power Rider 4:
-				</h3>
-
-				<ul class="listado">
-					<li><span>Lubrica el motor, la transmisión y el embrague.</span></li>
-					<li><span>Es altamente resistente a la oxidación del lubricante.</span></li>
-					<li><span>Limpia y dispersa los contaminantes.</span></li>
-					<li><span>Controla el coeficiente de fricción.</span></li>
-				</ul>
-
-				<p class="normas">
-					Además cumple con <strong>los más altos niveles de calidad y tecnología</strong>, garantizando el mejor funcionamiento durante el <strong>arranque, aceleración</strong> y a <strong>velocidad constante</strong>
-				</p>
-				<p>
-					<img src="assets/img/logos_certs_1.png" alt="SAE" class="logos-normas">
-					<img src="assets/img/logos_certs_2.png" alt="JASA" class="logos-normas">
-					<img src="assets/img/logos_certs_3.png" alt="API" class="logos-normas">
-				</p>
-
-			</div>
+			<div class="interior" id="interiorCaracteristicas"></div>
 
 		</div>
 	</div>
