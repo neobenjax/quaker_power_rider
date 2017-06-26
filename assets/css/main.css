@@ -979,6 +979,27 @@ h3.caracteristicas-power-titulo {
     margin-bottom: 50px;
     -webkit-transition: 1s ease all;
     transition: 1s ease all;
+    background-color: rgba(255, 255, 255, 0.3);
+    line-height: 1em;
+    border-radius: 40px;
+}
+
+h3.caracteristicas-power-titulo:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 66px;
+    height: 66px;
+    background-color: #3daf29;
+    margin-right: 15px;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+h3.caracteristicas-power-titulo span{
+    position:relative;
+    top: 3px;
+    font-weight: bold;
 }
 
 ul.listado {
@@ -1352,7 +1373,7 @@ button.slick-next{
     
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width: 500px) {
 
     h1.titulo-landing{font-size: 20px;padding: 20px 0;}
     .area-power-rider .logo-power-rider-secc {max-width: 290px;}
@@ -1367,6 +1388,8 @@ button.slick-next{
 
     .subBloque-caracteristicas .foto-motor {max-width: 250px;}
      h3.caracteristicas-power-titulo {font-size: 18px;}
+     h3.caracteristicas-power-titulo:before {width: 36px;height: 36px;}
+     h3.caracteristicas-power-titulo span{top:1px;}
     .subBloque-caracteristicas .caracteristicas-power > .interior{font-size:15px;}
 
     img.logos-normas{height:50px;}
@@ -1431,6 +1454,10 @@ button.slick-next{
     .tools-right a.link-a-quaker{font-size:13px;text-align: right;}
     .alertaScanCont .textoMensaje{font-size:16px;}
 
+    h3.caracteristicas-power-titulo{padding:20px 10px;text-align:center;}
+    h3.caracteristicas-power-titulo:before{display:none;}
+    h3.caracteristicas-power-titulo span{top:0px;}
+
 }
 
 @media only screen and (max-width : 380px){
@@ -1443,6 +1470,7 @@ button.slick-next{
 @media only screen and (max-width : 380px){
 
     footer .legales span.legales-movil{display:block;font-size:0;margin-bottom:20px;}
+    h3.caracteristicas-power-titulo{line-height:1.4em;padding:10px;}
 
 }
 
