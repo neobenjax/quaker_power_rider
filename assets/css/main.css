@@ -1441,6 +1441,9 @@ button.slick-next{
     .carrusel-motos .moto-recomendada {
         margin: 0px 0px;
     }
+    button.slick-prev, button.slick-next{
+    margin-top: 40px;
+}
     
 }
 
