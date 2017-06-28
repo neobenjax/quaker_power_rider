@@ -944,7 +944,7 @@ sup {
 .subBloque-caracteristicas .caracteristicas-power > .interior {
     width: 660px;
     margin: 0 auto;
-    font-size: 28px;
+    font-size: 24px;
     max-width: 100%;
 }
 
@@ -1245,7 +1245,7 @@ button.slick-next{
     ul.caracteristicas-lista{font-size: 20px;}
 
     h3.caracteristicas-power-titulo {font-size: 30px;margin-bottom: 30px;}
-    .subBloque-caracteristicas .caracteristicas-power > .interior{font-size:24px;}
+    .subBloque-caracteristicas .caracteristicas-power > .interior{font-size:20px;}
     p.normas {margin-bottom: 40px;}
     p.descripcion-caracteristica{margin-bottom:20px;}
 
