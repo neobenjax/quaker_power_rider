@@ -9,10 +9,10 @@
         "imagen_modo": "ps_deportiva.png",
         "data_info":1,
         "caracteristicas":[
-            "Aceite <b>mineral</b>",
-            "<b>Hasta 41%</b> mayor estabilidad a la oxidación",
-            "<b>Máximo control de fricción</b> para un mejor desempeño",
-            "Apto para lubricar <b>motor, caja de cambios y embrague</b>",
+            "Aceite <b>mineral</b>.",
+            "<b>Hasta 41%</b> mayor estabilidad a la oxidación.",
+            "<b>Máximo control de fricción</b> para un mejor desempeño.",
+            "Apto para lubricar <b>motor, caja de cambios y embrague</b>.",
             "Control en el clutch, especialmente cuando lleva pasajeros,<br> haciendo más suaves y completos los cambios."
         ]
     },
@@ -26,10 +26,10 @@
         "imagen_modo": "ps_urbana.png",
         "data_info":1,
         "caracteristicas":[
-            "Aceite <b>mineral</b>",
-            "Reduce el desgaste <b>hasta un 50%</b>",
-            "Excepcional control de oxidación ",
-            "Apto para lubricar el <b>motor caja de cambios y clutch</b>",
+            "Aceite <b>mineral</b>.",
+            "Reduce el desgaste <b>hasta un 50%</b>.",
+            "Excepcional control de oxidación.",
+            "Apto para lubricar el <b>motor caja de cambios y clutch</b>.",
             "Control en el clutch, especialmente cuando lleva carga,<br> haciendo más suaves y completos los cambios."
         ]
     },
@@ -43,11 +43,11 @@
         "imagen_modo": "ps_scooter.png",
         "data_info":2,
         "caracteristicas":[
-            "<b>Semi sintético</b>",
-            "Reduce la fricción <b>hasta un 25%</b>",
+            "<b>Semi sintético</b>.",
+            "Reduce la fricción <b>hasta un 25%</b>.",
             "Evita el sobrecalentamiento brindando mayor confort al usuario.",
-            "Mantiene limpio el motor por <b>más tiempo</b>",
-            "Para motocicletas con <b>transmisión automática</b> (CVT)"
+            "Mantiene limpio el motor por <b>más tiempo</b>.",
+            "Para motocicletas con <b>transmisión automática</b> (CVT)."
         ]
     }
 
